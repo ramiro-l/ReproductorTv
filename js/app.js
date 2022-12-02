@@ -7,6 +7,10 @@ const btntvpulica = V('#tvPublica');
 const btnAzteca7 = V('#azteca7');
 const btnDSport = V('#dSports');
 const btnTycSport = V('#tycSports');
+const btntvpulica0 = V('#tvPublica0');
+const btnAzteca70 = V('#azteca70');
+const btnDSport0 = V('#dSports0');
+const btnTycSport0 = V('#tycSports0');
 const btnDarkMode = V('#darkmode');
 const channelName = V('#channel');
 const messageContainer = V('#message-channel');
@@ -41,8 +45,8 @@ const detectIndex = (hash) => {
 const setLoading = () => {
     messageContainer.innerHTML = 'Cargando...';
     messageContainer.style.display = 'block';
-    messageContainer.style.color = '#02730D';
-    messageContainer.style.backgroundColor = 'rgba(157,255,80,0.59)';
+    messageContainer.style.color = '#ffffff';
+    messageContainer.style.backgroundColor = 'rgba(171, 219, 147)';
 }
 
 const addName = (name) => channelName.innerHTML = `${name}`;
@@ -163,4 +167,19 @@ on(btntvpulica,'click', () => {
 on(btnAzteca7,'click', () => {
     changeChannel(channels, 3);
 });
+
+on(btnDSport0,'click', () => {
+    changeChannel(channels, 0);
+    
+});
+on(btnTycSport0,'click', () => {
+    changeChannel(channels, 1);
+});
+on(btntvpulica0,'click', () => {
+    changeChannel(channels, 2);
+});
+on(btnAzteca70,'click', () => {
+    changeChannel(channels, 3);
+});
+
 
